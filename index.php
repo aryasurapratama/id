@@ -4,7 +4,7 @@ require('./helper/app.php');
 echo color('green', "[" . date("H:i:s") . "] ") . "Input File example (token.txt) : ";
 $file = trim(fgets(STDIN));
 
-for ($i = 0; $i < 50; $i++) {
+for ($i = 0; $i < 500; $i++) {
     echo"putaran ke $i \n";
     echo "\n";
     $list = explode("\n", str_replace("\r", "", file_get_contents($file)));
