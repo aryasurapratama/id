@@ -20,7 +20,7 @@ for ($i = 0; $i < 500; $i++) {
             echo color('green', "[" . date("H:i:s") . "] ") . "Nick name : $account\n";
             echo color('green', "[" . date("H:i:s") . "] ") . "saldo : $saldo\n";
             echo color('green', "[" . date("H:i:s") . "] ") . "poin : $poin\n";
-            $bet_ganjil = curl('https://api2.idgame365.com/api/order/create_oe','{"type":1,"game_type":24,"money":"10001"}',$token);
+            $bet_ganjil = curl('https://api2.idgame365.com/api/order/create_oe','{"type":1,"game_type":24,"money":"1001"}',$token);
             // print_r($bet_ganjil);
             if(strpos($bet_ganjil, '200')){
                 echo color('green', "[" . date("H:i:s") . "] ") . "Bet Ganjil Succesfully \n";
@@ -28,7 +28,7 @@ for ($i = 0; $i < 500; $i++) {
                 echo color('red', "[" . date("H:i:s") . "] ") . "Bet Ganjil Gagal \n";
 
             }
-            $bet_genap = curl('https://api2.idgame365.com/api/order/create_oe','{"type":1,"game_type":24,"money":"10000"}',$token);
+            $bet_genap = curl('https://api2.idgame365.com/api/order/create_oe','{"type":1,"game_type":24,"money":"1000"}',$token);
             // print_r($bet_genap);
             if(strpos($bet_genap, '200')){
                 echo color('green', "[" . date("H:i:s") . "] ") . "Bet Genap Succesfully \n";
